@@ -1,0 +1,8 @@
+.MODEL SMALL
+.STACK 100h
+.CODE
+    MOV AX, @DATA
+    MOV DS, AX
+
+    INT 21h
+    MOV AH 4CH
