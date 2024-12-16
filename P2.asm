@@ -8,7 +8,7 @@ Programa_Int:
 	
 Rutina_Servicio PROC
 	CLI
-	         
+    
 	     
 	INC CONT
 		CMP CONT, 18
@@ -30,25 +30,25 @@ Rutina_Servicio PROC
 		
 		;Controlar el reloj
 		
-;		CMP MSJ[4], '9'
-;		JNE TIMEINC
-;		MOV MSJ[4], '0'
-;		INC MSJ[3]
-;		
-;		CMP MSJ[3], '6'
-;		JNE SALIR
-;		MOV MSJ[3], '0'
-;		INC MSJ[1]
-;		
-;		CMP MSJ[1], '9'
-;		JNE SALIR
-;		MOV MSJ[1], '0'
-;		INC MSJ[0]
-;		
-;		CMP MSJ[0], '6'
-;		JNE SALIR
-;		MOV MSJ[0], '0'
-;		JMP SALIR
+		CMP MSJ[4], '9'
+		JNE TIMEINC
+		MOV MSJ[4], '0'
+		INC MSJ[3]
+		
+		CMP MSJ[3], '6'
+		JNE SALIR
+		MOV MSJ[3], '0'
+		INC MSJ[1]
+		
+		CMP MSJ[1], '9'
+		JNE SALIR
+		MOV MSJ[1], '0'
+		INC MSJ[0]
+		
+		CMP MSJ[0], '6'
+		JNE SALIR
+		MOV MSJ[0], '0'
+		JMP SALIR
 		
 		
 		TIMEINC:
